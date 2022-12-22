@@ -8,6 +8,8 @@ $hover-gray: #555;
 $footer-shop: #f5f5f5;
 $footer-li: #ddd;
 $border: 1px solid $light-gray;
+$light-black: #5c5c5c;
+$dark-gray2: #808080;
 
 // mixins
 @mixin menu {
@@ -376,7 +378,58 @@ footer {
       }
     }
   }
-  .footer__info {
+  .footer__info-wrap {
+    padding: 42px 0 80px;
+    background-color: #000;
+    .footer__inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      .footer__company-info {
+        p {
+          color: $light-gray;
+          font-size: 16px;
+          font-weight: 300;
+          line-height: 20px;
+          &:first-child {
+            padding: 0 0 18px;
+          }
+          span {
+            position: relative;
+            display: inline-block;
+            padding: 0 13px 0 0;
+            margin-right: 13px;
+            color: $light-black;
+            font-size: 15px;
+            line-height: 25px;
+            &::after {
+              content: "";
+              display: block;
+              position: absolute;
+              top: 50%;
+              right: 0;
+              width: 1px;
+              height: 14px;
+              background-color: $light-black;
+              transform: translateY(-50%);
+            }
+          }
+        }
+        .footer__kcp-info {
+          padding: 11px 0 0;
+          p {
+            color: $dark-gray2;
+            font: {
+              size: 15px;
+              weight: 300;
+            }
+            line-height: 25px;
+            letter-spacing: -0.5px;
+            padding: 0;
+          }
+        }
+      }
+    }
   }
 }
 
