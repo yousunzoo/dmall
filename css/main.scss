@@ -132,7 +132,38 @@ header {
           }
         }
       }
-      .header__member-menu-icon {
+    }
+
+    .header__member-menu-icon {
+      ul {
+        display: flex;
+        li {
+          margin: 0 13px;
+          &:last-child {
+            margin-right: 0;
+          }
+          a {
+            display: block;
+            width: 36px;
+            height: 29px;
+            background-repeat: no-repeat;
+            background-position: center;
+            span {
+              font-size: 0;
+              text-indent: -9999px;
+            }
+          }
+        }
+      }
+      .member-menu-icon__mypage {
+        a {
+          background-image: url("../images/top_mypage.png");
+        }
+      }
+      .member-menu-icon__basket {
+        a {
+          background-image: url("../images/top_cart.png");
+        }
       }
     }
   }
