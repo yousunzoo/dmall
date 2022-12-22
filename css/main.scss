@@ -1,8 +1,26 @@
+// variables
+$light-blue: #74cdff;
+
+/* common */
 body {
-  font-size: 16px;
-  font-family: "Noto Sans KR", sans-serif;
+  font: {
+    size: 12px;
+    family: "Noto Sans KR", sans-serif;
+  }
+  line-height: 1.4;
 }
 
 .campton {
   font-family: "Campton", sans-serif;
 }
+
+#wrap {
+}
+
+/* header */
+
+/* main */
+
+/* footer */
+
+/* totop */
