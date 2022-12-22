@@ -74,6 +74,9 @@ Parcel bundler와 SCSS를 사용하였습니다.
 ### footer
 
 - footer\_\_shop-util
+- footer\_\_family-site
+  - 클릭 시 올라오는 리스트 구현
+  - 맥락 상 select 태그가 맞는 것처럼 보이나, select를 디자인하는데에는 한계가 있어 main-menu, sub-menu 형식으로 구현
 - footer\_\_info
 
 ### #toTop
