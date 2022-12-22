@@ -276,6 +276,7 @@ footer {
     width: 100%;
     padding: 0 35px 0 32px;
     margin: 0 auto;
+    box-sizing: border-box;
   }
   .footer__shop-util {
     background-color: $footer-shop;
@@ -427,6 +428,13 @@ footer {
             letter-spacing: -0.5px;
             padding: 0;
           }
+        }
+      }
+      .footer__icons {
+        span {
+          display: inline-block;
+          vertical-align: middle;
+          margin-left: 30px;
         }
       }
     }
