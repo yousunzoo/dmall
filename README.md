@@ -1,47 +1,80 @@
-# 📌 자신이 원하는 사이트 레이아웃 클론
+# 📌 동아제약 공식몰 랜딩 페이지 클론코딩
 
-- 과제 기한:
-  - 과제 수행 기간: 2022년 12월 19일(월) ~ 2022년 12월 30일(금)
-  - 서로 리뷰 기간: 2023년 01월 02일(월) ~ 2022년 01월 06일(금)
-- 내용:
-  - 원하는 사이트(페이지)를 자유롭게 선택하고 레이아웃을 클론 코딩하세요.
-  - 평소에 도전해 보고 싶었거나 혹은 자신의 수준에 맞는 사이트(페이지)를 선택하세요.
+동아제약 공식몰 클론 코딩 프로젝트.
+HTML, CSS 만을 활용하여 해당 홈페이지의 UI를 그대로 구현해보는 프로젝트입니다.
 
-## 필수 요구사항
+기존 홈페이지의 div들을 시멘틱 태그로 대신하였고, BEM 방법론을 도입해보았습니다.
 
-- [ ] 설명이 포함된 README.md 파일을 제공하세요!
-- [ ] 결과와 비교할 수 있는 선택 사이트의 주소를 명시하세요!
-- [ ] 확인 가능한 HTML, CSS 파일 등이 모두 포함돼야 합니다!
-- [ ] 브라우저에서 정상적으로 출력돼야 합니다!
+Parcel bundler와 SCSS를 사용하였습니다.
 
-## 선택 요구사항
+🔹 제작 기간 : 2022년 12월 22일 ~
+🔹 개인 프로젝트
 
-- [ ] 시멘틱 태그를 최대한 활용해보세요.
-- [ ] 레거시 코드 활용보단 최신의 CSS Flex 혹은 Grid 등을 활용해보세요.
-- [ ] 부분적으로 BEM 방법론을 도입해보세요.
-- [ ] JS가 필요한 부분은 생략하되 이유를 명시해보세요.(CSS로 대체 가능한지 피드백이 있을 수 있겠죠?!)
-- [ ] JS가 필요한 부분 중 구현할 부분이 있다면 자유롭게 구현해보세요.(JS 과제가 아니니까 가볍게 구현하시길 추천해요)
-- [ ] SCSS 등의 CSS 전처리도구를 도입해보세요.
-- [ ] SCSS 컴파일에 Webpack이나 Parcel 같은 번들러를 활용해보세요.
+➡️[동아제약 공식몰](https://dmall.co.kr/)
 
-## 과제 수행 방법
+## 사용한 기술
 
-1. 현재 저장소를 로컬에 클론(Clone)합니다.
-1. 자신의 본명(E.g, `ParkYoungWoong`)으로 브랜치를 생성합니다.(본명을 꼭 파스칼케이스로 표시하세요!)
-1. 자신의 본명 브랜치에서 과제를 수행합니다.
-1. 과제 수행이 끝나면, 자신의 본명 브랜치를 원격 저장소에 푸시(Push)합니다.(`main` 브랜치에 푸시하지 않도록 꼭 주의하세요!)
-1. 저장소에서 `main` 브랜치를 대상으로 Pull Request 생성하면, 과제 제출이 완료됩니다!(E.g, `main` <== `ParkYoungWoong`)
+- HTML
+- CSS
 
-- Pull Request에서 보이는 설명을 다른 사람들이 이해하기 쉽도록 꼼꼼하게 작성하세요!
-- 과제 수행 및 제출 과정에서 문제가 발생한 경우, 바로 강사에서 얘기해주세요!
-- 과제 제출 후 절대 병합(Merge)하지 않도록 주의하세요!
+## 결과물
 
-## 이미지 추출법
+## 페이지 구조
 
-사이트 클론에 필요한 이미지를 좀 더 쉽게 추출하기 위해서 Chrome 확장 프로그램인 [Image Downloader](https://chrome.google.com/webstore/detail/image-downloader/cnpniohnfphhjihaiiggeabnkjhpaldj?hl=ko)를 사용하세요.
+### header
 
-1. 원하는 사이트 접속
-1. Image Downloader 확장 프로그램 실행
-1. 다운로드 원하는 이미지 선택
-1. 서브 폴더 이름(Save to subfolder) 명시
-1. 다운로드!
+- header\_\_top
+  - header\_\_logo
+  - header\_\_search
+  - header\_\_member-menu
+  - header\_\_member-menu-icon
+- header\_\_bottom
+  - header\_\_gnb-menu
+    - gnb-menu li에 `:hover`되었을 때의 스타일 구현
+
+### main
+
+#### mainCont
+
+= mainCont\_\_visual
+
+- mainCont\_\_prd-recommend
+  - 각 상품 li에 `:hover`되었을 때 opacity 조절
+- mainCont\_\_banner01
+- mainCont\_\_product
+  - mainCont\_\_product-new
+  - mainCont\_\_product-special
+- mainCont\_\_shopping-trend
+  - 각 상품 li에 `:hover`되었을 때 opacity 조절
+- mainCont\_\_event
+- mainCont\_\_gift
+- mainCont\_\_product-new
+- mainCont\_\_banner02
+- mainCont\_\_brand
+- mainCont\_\_product-hot
+- mainCont\_\_product-save
+- mainCont\_\_product-delivery
+- mainCont\_\_movie-box
+  - mainCont\_\_youtube
+  - mainCont\_\_intro
+- mainCont\_\_inquiry
+- mainCont\_\_board
+  - mainCont\_\_notice
+  - mainCont\_\_info
+
+#### mainNav
+
+- mainNav\_\_member-status
+- mainNav\_\_member-service
+- mainNav\_\_main-event
+- mainNav\_\_monthly-magazine
+  - `position:sticky`를 사용해 mainNav 영역이 끝날 때까지 스크롤을 따라오는 기능 구현
+
+### footer
+
+- footer\_\_shop-util
+- footer\_\_info
+
+### #toTop
+
+- 클릭시 페이지 최상단으로 이동
