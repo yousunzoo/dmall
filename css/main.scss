@@ -1,5 +1,7 @@
 // variables
 $light-blue: #74cdff;
+$gray: #8b8b8b;
+$light-gray: #e3e3e3;
 
 /* common */
 body {
@@ -11,6 +13,7 @@ body {
 }
 
 a {
+  color: #333;
   text-decoration: none;
 }
 
@@ -39,9 +42,11 @@ legend {
 
 /* header */
 header {
+  width: 100%;
   letter-spacing: -0.24px;
+  position: relative;
   .header__top {
-    padding: 67px 0 32px 32px;
+    padding: 67px 32px 32px 32px;
     display: flex;
     justify-content: space-between;
     .header__top__left {
@@ -93,6 +98,41 @@ header {
             background-position: center;
           }
         }
+      }
+    }
+    .header__member-menu {
+      position: absolute;
+      top: 7px;
+      right: 31px;
+      ul {
+        display: flex;
+        width: 100%;
+        li {
+          padding: 0 11px;
+          &::after {
+            content: "";
+            display: block;
+            width: 1px;
+            height: 11px;
+            background-color: $light-gray;
+            position: absolute;
+            top: calc((100% - 11px) / 2);
+            right: 0;
+          }
+          &:last-child::after {
+            display: none;
+          }
+          a {
+            color: $gray;
+            font: {
+              size: 12px;
+              weight: 500;
+            }
+            line-height: 20px;
+          }
+        }
+      }
+      .header__member-menu-icon {
       }
     }
   }
