@@ -29,6 +29,7 @@ Parcel bundler와 SCSS를 사용하였습니다.
   - header\_\_member-menu
   - header\_\_member-menu-icon
 - header\_\_bottom
+  - header\_\_all-btn
   - header\_\_gnb-menu
     - gnb-menu li에 `:hover`되었을 때의 스타일 구현
 

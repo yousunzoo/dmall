@@ -2,7 +2,17 @@
 $light-blue: #74cdff;
 $gray: #8b8b8b;
 $light-gray: #e3e3e3;
+$border: 1px solid $light-gray;
 
+// mixins
+@mixin menu {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  border-top: 1px solid #000;
+  position: absolute;
+}
 /* common */
 body {
   font: {
@@ -45,8 +55,12 @@ header {
   width: 100%;
   letter-spacing: -0.24px;
   position: relative;
+  .header__inner {
+    padding: 0 32px;
+    box-sizing: border-box;
+  }
   .header__top {
-    padding: 67px 32px 32px 32px;
+    padding: 67px 32px 0 32px;
     display: flex;
     justify-content: space-between;
     .header__top__left {
@@ -109,6 +123,7 @@ header {
         width: 100%;
         li {
           padding: 0 11px;
+          position: relative;
           &::after {
             content: "";
             display: block;
@@ -168,6 +183,42 @@ header {
     }
   }
   .header__bottom {
+    margin-top: 30px;
+    border: {
+      top: $border;
+      bottom: $border;
+    }
+    .header__all-btn {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 50px;
+      height: 48px;
+      margin-right: 55.5px;
+      border: {
+        left: $border;
+        right: $border;
+        cursor: pointer;
+        box-sizing: border-box;
+      }
+      span {
+        display: inline-block;
+        position: relative;
+        width: 18px;
+        height: 1px;
+        font-size: 0;
+        border-top: 1px solid #000;
+        &::before {
+          @include menu;
+          top: -6px;
+        }
+        &::after {
+          @include menu;
+          bottom: -6px;
+        }
+      }
+    }
   }
 }
 
