@@ -2,6 +2,7 @@
 $light-blue: #74cdff;
 $gray: #8b8b8b;
 $light-gray: #e3e3e3;
+$footer-shop: #f5f5f5;
 $border: 1px solid $light-gray;
 
 // mixins
@@ -17,7 +18,7 @@ $border: 1px solid $light-gray;
 body {
   font: {
     size: 12px;
-    family: "Noto Sans KR", sans-serif;
+    family: "Noto Sans KR", sans-serif !important;
   }
   line-height: 1.4;
 }
@@ -45,9 +46,6 @@ legend {
 }
 .campton {
   font-family: "Campton", sans-serif;
-}
-
-#wrap {
 }
 
 /* header */
@@ -263,5 +261,33 @@ header {
 /* main */
 
 /* footer */
+footer {
+  .footer__inner {
+    width: 100%;
+    padding: 0 35px 0 32px;
+    margin: 0 auto;
+  }
+  .footer__shop-util {
+    background-color: $footer-shop;
+    .footer__inner {
+      display: flex;
+      justify-content: space-between;
+      .footer__shop-util-menu {
+        display: flex;
+        padding: 19px 0;
+        li {
+          font: {
+            size: 16px;
+            weight: 300;
+          }
+          line-height: 20px;
+          margin-right: 43px;
+        }
+      }
+    }
+  }
+  .footer__info {
+  }
+}
 
 /* totop */
