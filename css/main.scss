@@ -18,8 +18,18 @@ button {
   outline: none;
   background-color: transparent;
   border: none;
+  padding: 0;
+  margin: 0;
 }
-
+legend {
+  visibility: hidden;
+  width: 0;
+  height: 0;
+  font-size: 0;
+  position: absolute;
+  z-index: -1;
+  overflow: hidden;
+}
 .campton {
   font-family: "Campton", sans-serif;
 }
@@ -29,18 +39,60 @@ button {
 
 /* header */
 header {
+  letter-spacing: -0.24px;
   .header__top {
     padding: 67px 0 32px 32px;
     display: flex;
     justify-content: space-between;
-    .header__logo {
-      margin-right: 32px;
-      a {
-        width: 133px;
-        height: 33px;
-        font-size: 0;
-        display: block;
-        background-image: url("../images/logo.png");
+    .header__top__left {
+      display: flex;
+      .header__logo {
+        margin-right: 32px;
+        a {
+          width: 133px;
+          height: 33px;
+          font-size: 0;
+          display: block;
+          background-image: url("../images/logo.png");
+        }
+      }
+      .header__search {
+        fieldset {
+          position: relative;
+          height: 34px;
+          input {
+            width: 478px;
+            height: 100%;
+            line-height: 34px;
+            border: 0;
+            color: #000;
+            font: {
+              family: "Noto Sans KR", sans-serif;
+              size: 14px;
+            }
+
+            box-sizing: border-box;
+            padding-left: 7px;
+            border-bottom: 1px solid #000;
+            letter-spacing: -0.24px;
+
+            &::placeholder {
+              color: #333;
+            }
+          }
+          button {
+            position: absolute;
+            display: flex;
+            top: 0;
+            right: 7px;
+            width: 24px;
+            height: 34px;
+            overflow: hidden;
+            background-image: url("../images/btn_search.gif");
+            background-repeat: no-repeat;
+            background-position: center;
+          }
+        }
       }
     }
   }

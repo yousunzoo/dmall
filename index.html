@@ -15,7 +15,7 @@
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
-    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/main.scss" />
     <title>동아제약 공식몰_디몰</title>
   </head>
@@ -30,12 +30,15 @@
             </h1>
             <div class="header__search">
               <form action="javascript:void(0)" id="searchBar" method="get">
-                <input
-                  type="text"
-                  placeholder="임플란트 하셨다면? &#9654; 검가드로 잇몸 관리" />
-                <button type="submit">
-                  <img src="./images/btn_search.gif" alt="search" />
-                </button>
+                <fieldset>
+                  <legend>검색</legend>
+                  <input
+                    id="keyword"
+                    name="keyword"
+                    type="text"
+                    placeholder="임플란트 하셨다면? &#9654; 검가드로 잇몸 관리" />
+                  <button type="submit"></button>
+                </fieldset>
               </form>
             </div>
           </div>
