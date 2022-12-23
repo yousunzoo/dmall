@@ -11,6 +11,8 @@ $footer-li: #ddd;
 $border: 1px solid $light-gray;
 $light-black: #5c5c5c;
 $dark-gray2: #808080;
+$bullet: #ccc;
+$bullet-active: #333;
 
 // mixins
 @mixin menu {
@@ -320,6 +322,22 @@ header {
             @for $i from 1 through 5 {
               background-image: url("../images/visual_0#{$i}.jpg");
             }
+          }
+        }
+      }
+      .mainCont__visual-slide-pagination {
+        text-align: center;
+        margin-top: 10px;
+        .mainCont__pagniation-bullet {
+          display: inline-block;
+          cursor: pointer;
+          width: 6px;
+          height: 6px;
+          margin: 0 2.5px;
+          border-radius: 100%;
+          background-color: $bullet;
+          &.active {
+            background-color: $bullet-active;
           }
         }
       }
