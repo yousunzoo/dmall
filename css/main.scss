@@ -60,6 +60,74 @@ legend {
   font-family: "Campton", sans-serif;
 }
 
+.mainCont__prdList {
+  width: 100%;
+  display: grid;
+  grid-template-rows: repeat(2, 280px);
+  grid-template-columns: repeat(3, calc(100% / 3));
+  row-gap: 40px;
+  margin-right: -12.5px;
+  li {
+    .mainCont__thumbnail {
+      width: 100%;
+      padding: 0 12.5px 12px;
+      box-sizing: border-box;
+      a {
+        display: block;
+        width: 100%;
+        border-radius: 13px;
+        overflow: hidden;
+        img {
+          display: block;
+          max-width: 100%;
+        }
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+    }
+    .mainCont__description {
+      box-sizing: border-box;
+      text-align: left;
+      line-height: 1.4;
+      padding: 0 12.5px;
+      a {
+        display: block;
+        max-width: 100%;
+        height: 22px;
+        line-height: 22px;
+        box-sizing: border-box;
+        .prd-title {
+          max-width: 100%;
+          font-size: 16px;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+        }
+      }
+      .prd-price {
+        padding-top: 9px;
+        font-size: 16px;
+        color: #aaa;
+      }
+    }
+  }
+}
+
+.mainCont .title {
+  margin-bottom: 20px;
+  p {
+    font-size: 25px;
+    line-height: 38px;
+    padding-bottom: 20px;
+  }
+  h3 {
+    font-size: 36px;
+    line-height: 44px;
+    font-weight: 700;
+  }
+}
+
 /* header */
 header {
   width: 100%;
@@ -358,18 +426,6 @@ header {
         width: 315px;
         height: 100%;
         margin-right: 45px;
-        .title {
-          p {
-            padding-bottom: 20px;
-            font-size: 25px;
-            line-height: 38px;
-          }
-          h3 {
-            font-size: 36px;
-            line-height: 44px;
-            font-weight: 700;
-          }
-        }
         a {
           display: block;
           width: 100%;
@@ -389,56 +445,6 @@ header {
       }
       .mainCont__prdList {
         width: calc(100% - 315px);
-        display: grid;
-        grid-template-rows: repeat(2, 280px);
-        grid-template-columns: repeat(3, calc(100% / 3));
-        row-gap: 40px;
-        margin-right: -12.5px;
-        li {
-          .mainCont__thumbnail {
-            width: 100%;
-            padding: 0 12.5px 12px;
-            box-sizing: border-box;
-            a {
-              display: block;
-              width: 100%;
-              border-radius: 13px;
-              overflow: hidden;
-              img {
-                display: block;
-                max-width: 100%;
-              }
-              &:hover {
-                opacity: 0.7;
-              }
-            }
-          }
-          .mainCont__description {
-            box-sizing: border-box;
-            text-align: left;
-            line-height: 1.4;
-            padding: 0 12.5px;
-            a {
-              display: block;
-              max-width: 100%;
-              height: 22px;
-              line-height: 22px;
-              box-sizing: border-box;
-              .prd-title {
-                max-width: 100%;
-                font-size: 16px;
-                overflow: hidden;
-                white-space: nowrap;
-                text-overflow: ellipsis;
-              }
-            }
-            .prd-price {
-              padding-top: 9px;
-              font-size: 16px;
-              color: #aaa;
-            }
-          }
-        }
       }
     }
     // banner01
@@ -449,6 +455,34 @@ header {
       img {
         margin-left: 50%;
         transform: translateX(-50%);
+      }
+    }
+
+    // product
+    .mainCont__product {
+      padding-top: 94px;
+      display: flex;
+      justify-content: space-between;
+      .mainCont__product-new {
+        width: 68%;
+        padding-right: 26px;
+        box-sizing: border-box;
+        .mainCont__product-banner {
+          border-radius: 13px;
+          overflow: hidden;
+          img {
+            width: 100%;
+          }
+        }
+        .mainCont__prdList {
+          grid-template-rows: auto;
+          li {
+            margin-top: 25px;
+          }
+        }
+      }
+      .mainCont__product-special {
+        width: 32%;
       }
     }
   }
