@@ -341,7 +341,50 @@ header {
         }
       }
     }
-
+    // prd-recommend
+    .mainCont__prd-recommend {
+      padding-top: 64px;
+      padding-left: 32px;
+      height: 670px;
+      width: 100%;
+      box-sizing: border-box;
+      .mainCont__title {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-between;
+        width: 315px;
+        height: 100%;
+        margin-right: 45px;
+        .title {
+          p {
+            padding-bottom: 20px;
+            font-size: 25px;
+            line-height: 38px;
+          }
+          h3 {
+            font-size: 36px;
+            line-height: 44px;
+            font-weight: 700;
+          }
+        }
+        a {
+          display: block;
+          width: 100%;
+          padding-bottom: 23px;
+          font: {
+            size: 18px;
+            weight: 600;
+          }
+          margin-bottom: 90px;
+          border-bottom: 3px solid #000;
+          span {
+            display: inline-block;
+            padding-right: 26px;
+            background: url("../images/main_more_arrow.png") no-repeat 100% 50%;
+          }
+        }
+      }
+    }
     // banner01
     .mainCont__banner01 {
       width: 100%;
