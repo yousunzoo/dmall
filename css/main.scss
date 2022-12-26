@@ -693,11 +693,40 @@ header {
       margin-left: -19px;
       box-sizing: border-box;
       .mainCont__prdList {
+        position: relative;
         width: auto;
-        grid-template-rows: repeat(1, 280px);
+        height: 280px;
+        grid-template-rows: 280px;
+        gap: 0;
         li {
           width: 213px;
           margin-right: 25px;
+        }
+        .mainCont__btns {
+          position: absolute;
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+          height: 50px;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+          left: 0;
+          span {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 45px;
+            height: 45px;
+            text-align: center;
+            border: 1px solid $gray;
+            color: $gray;
+            border-radius: 50%;
+            cursor: pointer;
+            &:first-child {
+              rotate: 180deg;
+            }
+          }
         }
       }
     }
