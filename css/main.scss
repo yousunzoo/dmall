@@ -13,6 +13,9 @@ $light-black: #5c5c5c;
 $dark-gray2: #808080;
 $bullet: #ccc;
 $bullet-active: #333;
+$trend01: #ecf6ff;
+$trend02: #ededfa;
+$trend03: #f8f8f8;
 
 // mixins
 @mixin menu {
@@ -60,6 +63,20 @@ legend {
   font-family: "Campton", sans-serif;
 }
 
+.prd-title {
+  max-width: 100%;
+  font-size: 16px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.prd-price {
+  padding-top: 10px;
+  font-size: 25px;
+  color: #fff;
+  font-weight: 500;
+}
+
 .mainCont__prdList {
   width: 100%;
   display: grid;
@@ -97,13 +114,6 @@ legend {
         height: 22px;
         line-height: 22px;
         box-sizing: border-box;
-        .prd-title {
-          max-width: 100%;
-          font-size: 16px;
-          overflow: hidden;
-          white-space: nowrap;
-          text-overflow: ellipsis;
-        }
       }
       .prd-price {
         padding-top: 9px;
@@ -181,7 +191,6 @@ header {
             box-sizing: border-box;
             padding-left: 7px;
             border-bottom: 1px solid #000;
-            letter-spacing: -0.24px;
 
             &::placeholder {
               color: #333;
@@ -355,6 +364,7 @@ header {
 .main {
   width: 100%;
   display: flex;
+  letter-spacing: -0.24px;
   .mainCont {
     width: 77%;
     height: 100%;
@@ -534,12 +544,7 @@ header {
                 overflow: hidden;
                 text-overflow: ellipsis;
               }
-              .prd-price {
-                padding-top: 10px;
-                font-size: 25px;
-                color: #fff;
-                font-weight: 500;
-              }
+
               .cart {
                 position: absolute;
                 display: block;
@@ -561,6 +566,81 @@ header {
         width: 100%;
         text-align: center;
         margin-top: 10px;
+      }
+    }
+
+    // shopping trend
+    .mainCont__shopping-trend {
+      padding-top: 94px;
+      .mainCont__shopping-container {
+        display: flex;
+        article {
+          width: 32%;
+          margin-right: 3%;
+          padding: 50px 0 20px;
+          border-radius: 13px;
+          &:first-child {
+            background-color: $trend01;
+          }
+          &:nth-child(2) {
+            background-color: $trend02;
+          }
+          &:last-child {
+            margin-right: 0;
+            background-color: $trend03;
+          }
+          .shopping-trend-title {
+            margin-bottom: 42px;
+            text-align: center;
+            font: {
+              size: 25px;
+              weight: 400px;
+            }
+            line-height: 35px;
+          }
+          .mainCont__prdList {
+            display: block;
+            .prd-list {
+              width: 100%;
+              padding: 0 8.5%;
+              margin-bottom: 13px;
+              box-sizing: border-box;
+              &:last-child {
+                margin-bottom: 0;
+              }
+              a {
+                display: flex;
+                align-items: center;
+                .mainCont__thumbnail {
+                  width: 100px;
+                  margin-right: 18px;
+                  background-color: #fff;
+                  padding: 0;
+                  img {
+                    width: 100%;
+                    &:hover {
+                      opacity: 0.7;
+                    }
+                  }
+                }
+                .mainCont__description {
+                  width: calc(100% - 118px);
+                  .prd-title {
+                    width: 100%;
+                    height: 46px;
+                    -webkit-line-clamp: 2;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    white-space: initial;
+                  }
+                  .prd-price {
+                    font-weight: 300;
+                  }
+                }
+              }
+            }
+          }
+        }
       }
     }
   }
