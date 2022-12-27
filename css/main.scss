@@ -138,7 +138,8 @@ legend {
 }
 
 .mainCont .title {
-  margin-bottom: 20px;
+  position: relative;
+  margin-bottom: 26px;
   p {
     font-size: 25px;
     line-height: 38px;
@@ -183,7 +184,7 @@ header {
   position: relative;
 
   .header__top {
-    padding: 67px 32px 0 32px;
+    padding: 67px 32px 32px 32px;
     display: flex;
     justify-content: space-between;
     .header__top__left {
@@ -305,8 +306,6 @@ header {
     }
   }
   .header__bottom {
-    padding-top: 30px;
-
     border: {
       top: $border;
       bottom: $border;
@@ -836,6 +835,27 @@ header {
             color: $pagination;
           }
         }
+      }
+    }
+
+    // mainCont__prd-hot
+    .mainCont__prd-hot {
+      padding-top: 94px;
+      .mainCont__prd-hot-date {
+        position: absolute;
+        top: 25px;
+        right: 0;
+        color: $gray;
+        font: {
+          size: 16px;
+          weight: 300;
+        }
+        line-height: 20px;
+      }
+      .mainCont__prd-hot-wrap {
+        display: flex;
+        padding: 42px 0 20px;
+        border-top: 1px solid $border-gray;
       }
     }
   }
