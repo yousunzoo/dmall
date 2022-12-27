@@ -971,6 +971,19 @@ header {
         }
       }
     }
+
+    .mainCont__prd-delivery {
+      .more {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        font: {
+          size: 16px;
+          weight: 400;
+        }
+        text-decoration: underline;
+      }
+    }
   }
   .mainNav {
     width: 23%;
