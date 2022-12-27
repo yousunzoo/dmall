@@ -146,7 +146,7 @@ legend {
     padding-bottom: 20px;
   }
   h3 {
-    font-size: 36px;
+    font-size: 32px;
     line-height: 44px;
     font-weight: 700;
   }
@@ -395,6 +395,10 @@ header {
     box-sizing: border-box;
     padding: 0 3.3% 0 2%;
     border-right: 1px solid $border-gray;
+
+    section {
+      padding-top: 94px;
+    }
     // visual
     .mainCont__visual {
       padding-top: 43px;
@@ -470,7 +474,6 @@ header {
 
     // product
     .mainCont__product {
-      padding-top: 94px;
       display: flex;
       justify-content: space-between;
       .mainCont__product-new {
@@ -572,7 +575,6 @@ header {
 
     // shopping trend
     .mainCont__shopping-trend {
-      padding-top: 94px;
       .mainCont__shopping-container {
         display: flex;
         article {
@@ -644,7 +646,6 @@ header {
 
     // event
     .mainCont__event {
-      padding-top: 94px;
       .title {
         display: flex;
         justify-content: space-between;
@@ -688,7 +689,6 @@ header {
     // mainCont__prd-gift
     .mainCont__prd-gift,
     .mainCont__prd-new {
-      padding-top: 94px;
       display: flex;
       padding-left: 51px;
       width: calc(100% + 38px);
@@ -737,7 +737,6 @@ header {
 
     // mainCont__brand
     .mainCont__brand {
-      padding-top: 94px;
       .mainCont__brand-swiper-container {
         width: 100%;
         position: relative;
@@ -840,7 +839,6 @@ header {
 
     // mainCont__prd-hot
     .mainCont__prd-hot {
-      padding-top: 94px;
       .mainCont__prd-hot-date {
         position: absolute;
         top: 25px;
@@ -956,6 +954,20 @@ header {
               }
             }
           }
+        }
+      }
+    }
+
+    // mainCont__prd-save
+    .mainCont__prd-save,
+    .mainCont__prd-delivery {
+      .mainCont__prdList {
+        grid-template-columns: repeat(5, 20%);
+        grid-template-rows: auto;
+        width: calc(100% + 25px);
+        margin-left: -12.5px;
+        li {
+          margin-top: 7px;
         }
       }
     }
