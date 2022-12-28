@@ -1046,6 +1046,52 @@ header {
             box-sizing: border-box;
             border-radius: 13px;
             overflow: hidden;
+            position: relative;
+            h4 {
+              font: {
+                size: 25px;
+                weight: 500;
+              }
+              span {
+                position: relative;
+                display: inline-block;
+              }
+              span::after {
+                content: "";
+                position: absolute;
+                width: 26px;
+                height: 26px;
+                right: -37px;
+                background: url("../images/main_intro_arrow.png") no-repeat 50%;
+                top: 5px;
+              }
+            }
+            p {
+              padding-top: 10px;
+              font: {
+                size: 16px;
+                weight: 300;
+              }
+              line-height: 25px;
+            }
+          }
+          .brand-info::after {
+            position: absolute;
+            content: "";
+            width: 60px;
+            height: 60px;
+            bottom: 30px;
+            right: 20px;
+            background: url("../images/main_brand_icon.png") no-repeat 50%;
+          }
+          .brand-review::after {
+            position: absolute;
+            content: "";
+            width: 60px;
+            height: 60px;
+            bottom: 30px;
+            right: 20px;
+            background: url("../images/main_review_icon.png") no-repeat 50%;
           }
         }
       }
