@@ -1250,8 +1250,6 @@ header {
     height: 7655px;
     box-sizing: border-box;
     padding: 0 15px 0 20px;
-    display: flex;
-    flex-direction: column;
 
     h3 {
       font: {
@@ -1321,7 +1319,7 @@ header {
       padding-top: 10px;
       .mainNav__magazine {
         margin-top: 22px;
-        position: absolute;
+        position: relative;
         width: 100%;
         .mainNav__magazine-box {
           background: #ebe0e6;
