@@ -1121,7 +1121,7 @@ header {
         padding: 6px 0;
         .main-cs-qa,
         .main-cs-faq {
-          width: 25%;
+          flex: 1;
           a {
             display: flex;
             width: 106px;
@@ -1138,7 +1138,7 @@ header {
         }
         .main-cs-tell,
         .main-cs-hours {
-          width: 50%;
+          flex: 2;
         }
         .main-cs-tell {
           h5 {
