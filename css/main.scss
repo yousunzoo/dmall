@@ -1249,6 +1249,31 @@ header {
     width: 23%;
     height: 100%;
     box-sizing: border-box;
+    .mainNav__top {
+      padding: 42px;
+      text-align: center;
+      p {
+        font: {
+          size: 25px;
+          weight: 700;
+        }
+        line-height: 33px;
+      }
+      a {
+        margin-top: 21px;
+        display: inline-block;
+        width: 181px;
+        height: 57px;
+        line-height: 57px;
+        border: 1px solid #000;
+        border-radius: 30px;
+        box-sizing: border-box;
+        font: {
+          size: 18px;
+          weight: 500;
+        }
+      }
+    }
   }
 }
 
