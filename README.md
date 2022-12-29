@@ -67,7 +67,6 @@ Parcel bundler와 SCSS를 사용하였습니다.
 
 - mainNav\_\_member-status
 - mainNav\_\_member-service
-- mainNav\_\_main-event
 - mainNav\_\_monthly-magazine
   - `position:sticky`를 사용해 mainNav 영역이 끝날 때까지 스크롤을 따라오는 기능 구현
 
