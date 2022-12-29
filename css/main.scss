@@ -358,8 +358,8 @@ header {
           }
         }
       }
-      .header__gnb-menu {
-        .header__menu-list {
+      .gnb-menu {
+        .gnb-menu__list {
           display: flex;
           li {
             a {
@@ -428,7 +428,7 @@ header {
             height: 100%;
             padding: 60px 50px;
             box-sizing: border-box;
-            .mainCont__txt {
+            .visual__txt {
               color: white;
               strong {
                 display: block;
