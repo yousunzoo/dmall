@@ -20,6 +20,15 @@
       href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/main.scss" />
+
+    <!-- Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <script defer src="./main.js"></script>
     <title>동아제약 공식몰_디몰</title>
   </head>
   <body>
@@ -97,75 +106,54 @@
         <main class="mainCont">
           <!-- VISUAL -->
           <section class="mainCont__visual">
-            <div class="mainCont__visual-swiper-wrapper">
-              <div class="mainCont__visual-swiper-slide">
-                <a href="javascript:void(0)"
-                  ><div class="visual__txt">
-                    <strong
-                      >나만의 영양설계<br />셀픽가이드로 알아보세요!</strong
-                    ><em>단 3분이면 설문완료, 최대 30&#37; 쿠폰까지</em>
-                  </div></a
-                >
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="javascript:void(0)">
+                    <img src="./images/visual_01.jpg" alt="visual 01" />
+                    <div class="visual__txt">
+                      <strong
+                        >눈부신 연말, 선물하기 좋은<br />셀파렉스 에센셜
+                        기프트세트</strong
+                      ><em>&#35;선착순한정 39,900원 &#35;연말선물</em>
+                    </div></a
+                  >
+                </div>
+                <div class="swiper-slide">
+                  <a href="javascript:void(0)"
+                    ><img src="./images/visual_02.jpg" alt="visual 02" />
+                    <div class="visual__txt">
+                      <strong
+                        >나만의 영양설계<br />셀픽가이드로 알아보세요!</strong
+                      ><em>단 3분이면 설문완료, 최대 30&#37; 쿠폰까지</em>
+                    </div></a
+                  >
+                </div>
+                <div class="swiper-slide">
+                  <a href="javascript:void(0)"
+                    ><img src="./images/visual_03.jpg" alt="visual 03" />
+                    <div class="visual__txt">
+                      <strong
+                        >한 '템포' 더 따뜻한 연말<br />꿀잠 수면엔 템포
+                        오버나이트</strong
+                      ><em>&#35;선착순100원딜 &#35;최대50&#37;</em>
+                    </div></a
+                  >
+                </div>
+                <div class="swiper-slide">
+                  <a href="javascript:void(0)"
+                    ><img src="./images/visual_04.jpg" alt="visual 04" />
+                    <div class="visual__txt">
+                      <strong
+                        >메리 미니막스 크리스마스<br />
+                        비타민D 1+1 &#35;디몰단독</strong
+                      >
+                      <em>선착순 레고 장난감 증정</em>
+                    </div>
+                  </a>
+                </div>
               </div>
-              <div class="mainCont__visual-swiper-slide">
-                <a href="javascript:void(0)"
-                  ><div class="visual__txt">
-                    <strong
-                      >나만의 영양설계<br />셀픽가이드로 알아보세요!</strong
-                    ><em>단 3분이면 설문완료, 최대 30&#37; 쿠폰까지</em>
-                  </div></a
-                >
-              </div>
-              <div class="mainCont__visual-swiper-slide">
-                <a href="javascript:void(0)"
-                  ><div class="visual__txt">
-                    <strong
-                      >한 '템포' 더 따뜻한 연말<br />꿀잠 수면엔 템포
-                      오버나이트</strong
-                    ><em>&#35;선착순100원딜 &#35;최대50&#37;</em>
-                  </div></a
-                >
-              </div>
-              <div class="mainCont__visual-swiper-slide">
-                <a href="javascript:void(0)">
-                  <div class="visual__txt">
-                    <strong
-                      >메리 미니막스 크리스마스<br />
-                      비타민D 1+1 &#35;디몰단독</strong
-                    >
-                    <em>선착순 레고 장난감 증정</em>
-                  </div>
-                </a>
-              </div>
-              <div class="mainCont__visual-swiper-slide">
-                <a href="javascript:void(0)">
-                  <div class="visual__txt">
-                    <strong
-                      >지노렉스, 여성 Y존 케어<br />
-                      '나'를 위한 릴렉싱 타임
-                    </strong>
-                    <em>런칭키트 40&#37; &#35;한정수량</em>
-                  </div>
-                </a>
-              </div>
-              <div class="mainCont__visual-swiper-slide">
-                <a href="javascript:void(0)">
-                  <div class="visual__txt">
-                    <strong
-                      >나만의 영양설계<br />
-                      셀픽가이드로 알아보세요 !
-                    </strong>
-                    <em>단 3분이면 설문완료, 최대30&#37; 쿠폰까지</em>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="mainCont__visual-slide-pagination">
-              <span class="mainCont__pagniation-bullet active"></span>
-              <span class="mainCont__pagniation-bullet"></span>
-              <span class="mainCont__pagniation-bullet"></span>
-              <span class="mainCont__pagniation-bullet"></span>
-              <span class="mainCont__pagniation-bullet"></span>
+              <div class="swiper-pagination"></div>
             </div>
           </section>
           <section class="mainCont__prd-recommend">
